@@ -1,6 +1,6 @@
 # @barndev/result
 
-Errors-as-values Typescript implementation with opt-in runtime enum.
+Typescript errors-as-values implementation with opt-in runtime enum.
 
 `@barndev/result` exports a single type, `Result` which can have either a `data: T` or an `error: string | Error`, but never both. The alternate `@barndev/result/enum` entrypoint exports an enum-like object that can be used at runtime to create `Result`s.
 
