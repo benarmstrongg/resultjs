@@ -1,0 +1,42 @@
+{
+    "name": "@barndev/result",
+    "version": "0.0.1",
+    "description": "Errors-as-values Typescript implementation with opt-in runtime enum",
+    "license": "MIT",
+    "keywords": [
+        "result",
+        "error",
+        "typescript"
+    ],
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": "./dist/index.js",
+        "./elems": "./dist/elems.js"
+    },
+    "author": "ben armstrong",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/benarmstrongg/resultjs.git"
+    },
+    "files": [
+        "dist",
+        "enum.js"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "tsup",
+        "lint": "tsc",
+        "changeset": "changeset",
+        "prepublish": "pnpm run build && cp ./dist/enum* ./",
+        "publish": "pnpm run prepublish && changeset publish"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.27.1",
+        "tsup": "^8.0.2",
+        "typescript": "^5.3.3"
+    }
+}
