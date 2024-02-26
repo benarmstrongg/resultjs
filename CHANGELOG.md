@@ -1,5 +1,11 @@
 # @barndev/result
 
+## 1.0.0
+
+### Major Changes
+
+- d68d391: 1.0.0 release
+
 ## 0.0.5
 
 ### Patch Changes
