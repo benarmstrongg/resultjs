@@ -31,7 +31,7 @@
         "build": "tsup",
         "lint": "tsc",
         "changeset": "changeset",
-        "prepublish": "pnpm run build && cp ./dist/* ./",
+        "prepublish": "pnpm run build && mv ./dist/* ./",
         "publish": "pnpm run prepublish && changeset publish"
     },
     "devDependencies": {
