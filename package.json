@@ -1,6 +1,6 @@
 {
     "name": "@barndev/result",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Typescript errors-as-values implementation with opt-in runtime enum.",
     "license": "MIT",
     "keywords": [
