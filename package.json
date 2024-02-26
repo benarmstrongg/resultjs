@@ -13,7 +13,7 @@
     "types": "dist/index.d.ts",
     "exports": {
         ".": "./dist/index.js",
-        "./elems": "./dist/elems.js"
+        "./enum": "./dist/enum.js"
     },
     "author": "ben armstrong",
     "repository": {
@@ -21,8 +21,8 @@
         "url": "https://github.com/benarmstrongg/resultjs.git"
     },
     "files": [
-        "dist",
-        "enum.js"
+        "./dist",
+        "./enum.*"
     ],
     "publishConfig": {
         "access": "public"
@@ -31,7 +31,7 @@
         "build": "tsup",
         "lint": "tsc",
         "changeset": "changeset",
-        "prepublish": "pnpm run build && cp ./dist/enum* ./",
+        "prepublish": "pnpm run build && cp ./dist/enum.* ./",
         "publish": "pnpm run prepublish && changeset publish"
     },
     "devDependencies": {
