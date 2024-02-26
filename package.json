@@ -8,12 +8,12 @@
         "error",
         "typescript"
     ],
-    "main": "dist/index.js",
-    "module": "dist/index.mjs",
-    "types": "dist/index.d.ts",
+    "main": "index.js",
+    "module": "index.mjs",
+    "types": "index.d.ts",
     "exports": {
-        ".": "./dist/index.js",
-        "./enum": "./dist/enum.js"
+        ".": "./index.js",
+        "./enum": "./enum.js"
     },
     "author": "ben armstrong",
     "repository": {
@@ -21,7 +21,7 @@
         "url": "https://github.com/benarmstrongg/resultjs.git"
     },
     "files": [
-        "./dist",
+        "./index.*",
         "./enum.*"
     ],
     "publishConfig": {
@@ -31,7 +31,7 @@
         "build": "tsup",
         "lint": "tsc",
         "changeset": "changeset",
-        "prepublish": "pnpm run build && cp ./dist/enum.* ./",
+        "prepublish": "pnpm run build && cp ./dist/* ./",
         "publish": "pnpm run prepublish && changeset publish"
     },
     "devDependencies": {
