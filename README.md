@@ -1,5 +1,9 @@
 # @barndev/result
 
+![npm bundle size](https://img.shields.io/bundlephobia/min/@barndev/result)
+![npm bundle size minzip](https://img.shields.io/bundlephobia/minzip/@barndev/result)
+[![npm version](https://badge.fury.io/js/@barndev%2Fresult.svg)](https://www.npmjs.com/package/@barndev/result)
+
 Typescript errors-as-values implementation with opt-in runtime enum.
 
 `@barndev/result` exports a single type, `Result` which can have either a `data: T` or an `error: string | Error`, but never both. The alternate `@barndev/result/enum` entrypoint exports an enum-like object that can be used at runtime to create `Result`s.
