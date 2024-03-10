@@ -1,7 +1,7 @@
 # @barndev/result
 
-![npm bundle size](https://img.shields.io/bundlephobia/min/@barndev/result)
-![npm bundle size minzip](https://img.shields.io/bundlephobia/minzip/@barndev/result)
+![bundle size](https://img.shields.io/bundlephobia/min/@barndev/result)
+![bundle size minzip](https://img.shields.io/bundlephobia/minzip/@barndev/result)
 [![npm version](https://badge.fury.io/js/@barndev%2Fresult.svg)](https://www.npmjs.com/package/@barndev/result)
 
 Typescript errors-as-values implementation with opt-in runtime enum.
@@ -41,7 +41,7 @@ import { Result } from 'https://esm.sh/@barndev/result/enum';
 ```ts
 import type { Result } from '@barndev/result';
 
-async function readConfig(): Promise<Result<string>> {
+async function readConfig(): Promise<Result<Config>> {
     try {
         const json = await readFile('config.json');
         const config = JSON.parse(json);
